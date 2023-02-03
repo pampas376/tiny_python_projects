@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 Author : nicolo <nicolo@localhost>
-Date   : 2023-02-02
-Purpose: Say hello
+Date   : 2023-02-03
+Purpose: Say Hello
 """
 
 import argparse
@@ -13,22 +13,22 @@ def get_args():
     """Get command-line arguments"""
 
     parser = argparse.ArgumentParser(
-        description='Rock the Casbah',
+        description='hello project',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
-    parser.add_argument('-n',
-                        '--name',
+    parser.add_argument('-n', 
+                        '--name', 
                         help='name to greet',
                         metavar='name',
                         type=str,
                         default='World')
-
+        
     return parser.parse_args()
 
 
 # --------------------------------------------------
 def main():
-    """Make a jazz noise here"""
+    """say hello"""
 
     args = get_args()
     person = args.name
@@ -37,4 +37,5 @@ def main():
 
 # --------------------------------------------------
 if __name__ == '__main__':
+
     main()
