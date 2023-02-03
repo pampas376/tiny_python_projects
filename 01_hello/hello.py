@@ -2,7 +2,7 @@
 """
 Author : nicolo <nicolo@localhost>
 Date   : 2023-02-02
-Purpose: Say hello
+Purpose: Say Hello
 """
 
 import argparse
@@ -13,7 +13,7 @@ def get_args():
     """Get command-line arguments"""
 
     parser = argparse.ArgumentParser(
-        description='Rock the Casbah',
+        description='Say Hello',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
     parser.add_argument('-n',
@@ -28,7 +28,7 @@ def get_args():
 
 # --------------------------------------------------
 def main():
-    """Make a jazz noise here"""
+    """Saying hello"""
 
     args = get_args()
     person = args.name
