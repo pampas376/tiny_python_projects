@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Picnic game"""
+"""
+Author : nicolo <nicolo@localhost>
+Date   : 2023-02-12
+Purpose: Picnic Game
+"""
 
 import argparse
 
@@ -48,9 +52,7 @@ def main():
 
     # print('You are bringing {}.'.format(bringing))
     print(f'You are bringing {bringing}.')
-    print(__name__)
 
 # --------------------------------------------------
 if __name__ == '__main__':
-    print("in solution")
     main()
