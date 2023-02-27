@@ -31,7 +31,6 @@ def main():
         new_text += jumper.get(char, char)
     print(new_text)
 
-
 # --------------------------------------------------
 if __name__ == '__main__':
     main()

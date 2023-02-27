@@ -10,7 +10,7 @@ import argparse
 
 # --------------------------------------------------
 def get_args():
-    """Get command-line arguments"""
+    """Get test command-line arguments"""
 
     parser = argparse.ArgumentParser(
         description='Jump the Five',
@@ -29,7 +29,6 @@ def main():
     jumper = {'1': '9', '2': '8', '3': '7', '4': '6', '5': '0',
               '6': '4', '7': '3', '8': '2', '9': '1', '0': '5'}
 
-    # Method 5: str.translate
     print(args.text.translate(str.maketrans(jumper)))
 
 
