@@ -2,7 +2,7 @@
 
 set -eu -o pipefail
 
-PRG="wc.py"
+PRG="wc1.py"
 for FILE in solution*.py; do
     echo "==> ${FILE} <==" 
     cp "$FILE" "$PRG"
