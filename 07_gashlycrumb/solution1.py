@@ -36,9 +36,13 @@ def main():
 
     lookup = {}
     for line in args.file:
+        # print(line)
         lookup[line[0].upper()] = line.rstrip()
+    # lookup["5]="try 5"
+    # print(lookup)
 
     for letter in args.letter:
+        # print(letter)
         if letter.upper() in lookup:
             print(lookup[letter.upper()])
         else:
